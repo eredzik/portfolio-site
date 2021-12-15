@@ -20,7 +20,7 @@ const Skills = () => {
 						<div className="d-flex justify-content-center flex-wrap mb-5">
 							{skillsSection.softwareSkills.map((skill) => {
 								return (
-									<Fragment key={skill.skillName}>
+									<React.Fragment key={skill.skillName}>
 										<div
 											className="icon icon-lg icon-shape shadow rounded-circle mb-5"
 											id={skill.skillName}
@@ -40,13 +40,13 @@ const Skills = () => {
 										>
 											{skill.skillName}
 										</UncontrolledTooltip>
-									</Fragment>
+									</React.Fragment>
 								);
 							})}
 						</div>
 						<div>
-							{skillsSection.skills.map((skill) => {
-								return <p key={skill}>{skill}</p>;
+							{skillsSection.skills.map((skill, i) => {
+								return <p key={i}>{skill}</p>;
 							})}
 						</div>
 					</Col>

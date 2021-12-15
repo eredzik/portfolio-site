@@ -8,6 +8,7 @@ import {
 	CardText,
 	CardHeader,
 	Col,
+	UncontrolledTooltip,
 } from "reactstrap";
 
 import Color from "color-thief-react";
@@ -49,10 +50,32 @@ const ExperienceCard = ({ data }) => {
 							<ul>
 								{data.descBullets
 									? data.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
-									  })
+										return <li key={desc}>{desc}</li>;
+									})
 									: null}
 							</ul>
+							{data.skills ?
+								data.skills.map((skill) =>
+									<>
+										<div
+											className="icon icon-lg icon-shape shadow rounded-circle mb-1"
+											id={skill.skillName}
+										>
+											<span
+												className="iconify"
+												data-icon={
+													skill.fontAwesomeClassname
+												}
+												data-inline="false"
+											/>
+										</div>
+										<UncontrolledTooltip
+											delay={0}
+											placement="bottom"
+											target={skill.skillName}
+										>
+											{skill.skillName}
+										</UncontrolledTooltip></>) : null}
 						</CardText>
 					</CardBody>
 				</Card>

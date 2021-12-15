@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import PropTypes from "prop-types";
-const Navigation = dynamic(() => import("../components/Navigation"));
+const Navigation = dynamic(import("../components/Navigation"));
 const Greetings = dynamic(() => import("../containers/Greetings"));
 const Skills = dynamic(() => import("../containers/Skills"));
 const Proficiency = dynamic(() => import("../containers/Proficiency"));
@@ -13,39 +13,38 @@ const GithubProfileCard = dynamic(() =>
 );
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
-
+import { greetings } from "../portfolio";
 export default function Home({ githubProfileData }) {
 	return (
 		<div>
 			<SEO
 				data={{
 					title: "Hanzla Tauqeer",
-					description:
-						"A passionate Full Stack Web Developer and Mobile App Developer.",
+					description: greetings.shortDescription,
 					image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
 					url: "https://developer-portfolio-1hanzla100.vercel.app",
 					keywords: [
-						"Hanzla",
-						"Hanzla Tauqeer",
-						"@1hanzla100",
-						"1hanzla100",
+						"Redzik",
+						"Emil Redzik",
+						"@eredzik",
+						"eredzik",
 						"Portfolio",
-						"Hanzla Portfolio ",
-						"Hanzla Tauqeer Portfolio",
+						"Redzik Portfolio ",
+						"Redzik Emil Portfolio",
 						"web developer",
 						"full stack",
 						"full stack web developer",
-						"mobile app developer",
-						"android developer",
+						"data scientist",
+						"modelling",
+						"data engineer",
+						"data engineering",
+						"data",
 						"django",
 						"flask",
 						"django rest framework",
 						"nodejs ",
-						"expressjs",
 						"reactjs ",
 						"contextapi",
-						"redux",
-						"flutter",
 					],
 				}}
 			/>
@@ -53,8 +52,8 @@ export default function Home({ githubProfileData }) {
 			<Greetings />
 			<Skills />
 			<Proficiency />
-			<Education />
 			<Experience />
+			<Education />
 			<Feedbacks />
 			<Projects />
 			<GithubProfileCard prof={githubProfileData} />
