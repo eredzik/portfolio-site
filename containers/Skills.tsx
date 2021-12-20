@@ -5,7 +5,7 @@ import DisplayLottie from "../components/DisplayLottie";
 import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 import { skillsSection } from "../portfolio";
-
+import { Icon } from "@iconify/react";
 const Skills = () => {
 	return (
 		<Fade bottom duration={1000} distance="40px">
@@ -25,13 +25,8 @@ const Skills = () => {
 											className="icon icon-lg icon-shape shadow rounded-circle mb-5"
 											id={skill.skillName}
 										>
-											<span
-												className="iconify"
-												data-icon={
-													skill.fontAwesomeClassname
-												}
-												data-inline="false"
-											></span>
+											<Icon icon={skill.fontAwesomeClassname} />
+
 										</div>
 										<UncontrolledTooltip
 											delay={0}

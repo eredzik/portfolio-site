@@ -71,8 +71,7 @@ export const Navigation = () => {
 											className="navbar-toggler"
 											id="navbar_global"
 										>
-											<span />
-											<span />
+
 										</button>
 									</Col>
 								</Row>

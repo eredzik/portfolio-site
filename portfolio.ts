@@ -30,15 +30,12 @@ export const skillsSection = {
 	subTitle:
 		"Staram się być na bieżąco z szerokim zakresem technologii by móc tworzyć najlepsze możliwe projekty dla klientów",
 	skills: [
-		emoji(
-			"⚡ Tworzę wydajne przepływy danych za pomocą technologii hurtowni danych oraz big data"
-		),
-		emoji(
-			"⚡ Tworzę interaktywne aplikacje webowe zarówno od strony frontendu jak i backendu"
-		),
-		emoji(
-			"⚡ Buduję modele statystyczne i machine learningowe oraz zajmuję się ich deploymentem"
-		),
+		"⚡ Tworzę wydajne przepływy danych za pomocą technologii hurtowni danych oraz big data"
+		,
+		"⚡ Tworzę interaktywne aplikacje webowe zarówno od strony frontendu jak i backendu"
+		,
+		"⚡ Buduję modele statystyczne i machine learningowe oraz zajmuję się ich deploymentem"
+		,
 	],
 
 	softwareSkills: [
@@ -180,7 +177,7 @@ export const educationInfo = [
 
 export const experience = [
 	{
-		key: "pzu-de",
+		key: "pzude",
 		role: "Kontraktor - Inżynier danych",
 		company: "PZU",
 
@@ -217,7 +214,7 @@ export const experience = [
 
 	},
 	{
-		key: "acn-de",
+		key: "acnde",
 		role: "Kontraktor - Inżynier danych",
 		company: "Accenture",
 		size: "80%",
@@ -248,7 +245,7 @@ export const experience = [
 		]
 	},
 	{
-		key: "mbank-de",
+		key: "mbankde",
 		role: "Kontraktor - Inżynier danych",
 		company: "mBank",
 		size: "70%",
@@ -284,7 +281,7 @@ export const experience = [
 		],
 	},
 	{
-		key: "pko-ds",
+		key: "pkods",
 		role: "Inżynier danych, data scientist",
 		company: "PKO",
 		size: "60%",
@@ -312,7 +309,7 @@ export const experience = [
 		]
 	},
 	{
-		key: "bp-ds",
+		key: "bpds",
 		role: "Młodszy analityk danych",
 		company: "Bank Pocztowy",
 		size: "90%",
@@ -341,7 +338,7 @@ export const experience = [
 
 	},
 	{
-		key: "pzu-dba",
+		key: "pzudba",
 		role: "Młodszy administrator baz danych",
 		company: "PZU",
 		companylogo: "/img/icons/common/pzu_logo_rgb.png",

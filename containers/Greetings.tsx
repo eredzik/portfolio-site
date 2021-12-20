@@ -5,6 +5,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
+import { Icon } from '@iconify/react';
 
 const Greetings = () => {
 	useEffect(() => {
@@ -46,20 +47,20 @@ const Greetings = () => {
 											color="default"
 											href={greetings.resumeLinkEN}
 										>
-											<span className="iconify" data-icon="cif:gb"></span>
-											<span className="btn-inner--text">
+											<Icon icon={"cif:gb"} />
+											{/* <span className="btn-inner--text">
 												ENGLISH VERSION
-											</span>
+											</span> */}
 										</Button>
 										<Button
 											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
 											color="default"
 											href={greetings.resumeLinkEN}
 										>
-											<span className="iconify" data-icon="cif:pl"></span>
-											<span className="btn-inner--text">
+											<Icon icon={"cif:pl"} />
+											{/* <span className="btn-inner--text">
 												WERSJA POLSKA
-											</span>
+											</span> */}
 										</Button>
 									</div>
 								</Col>

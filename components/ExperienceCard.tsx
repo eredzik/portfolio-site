@@ -15,6 +15,7 @@ import Color from "color-thief-react";
 
 import { Fade } from "react-reveal";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 const ExperienceCard = ({ data }) => {
 	return (
@@ -49,42 +50,37 @@ const ExperienceCard = ({ data }) => {
 						</div>
 						<CardTitle tag="h5">{data.role}</CardTitle>
 						<CardSubtitle>{data.date}</CardSubtitle>
-						<CardText className="description my-3 text-left">
+						<CardText className="description my-3" tag="div">
 							{data.desc}
-							<ul>
-								{data.descBullets
-									? data.descBullets.map((desc) => {
-										return <li key={desc}>{desc}</li>;
-									})
-									: null}
-							</ul>
+							<br />
+
+
+
+
 							{data.skills ?
-								data.skills.map((skill) =>
-									<>
-										<div
+								data.skills.map((skill) => {
+									return <React.Fragment key={data.key + skill.skillName} >
+										< div
 											className="icon icon-lg icon-shape shadow rounded-circle mb-1"
 											id={skill.skillName}
 										>
-											<span
-												className="iconify"
-												data-icon={
-													skill.fontAwesomeClassname
-												}
-												data-inline="false"
-											/>
+											<Icon icon={skill.fontAwesomeClassname} />
+											<UncontrolledTooltip
+												delay={0}
+												placement="bottom"
+												target={skill.skillName}
+											>
+												{skill.skillName}
+											</UncontrolledTooltip>
 										</div>
-										<UncontrolledTooltip
-											delay={0}
-											placement="bottom"
-											target={skill.skillName}
-										>
-											{skill.skillName}
-										</UncontrolledTooltip></>) : null}
+
+									</React.Fragment>
+								}) : null}
 						</CardText>
 					</CardBody>
 				</Card>
-			</Fade>
-		</Col>
+			</Fade >
+		</Col >
 	);
 };
 
