@@ -38,14 +38,27 @@ const Greetings = () => {
 									</p>
 									<SocialLinks />
 									<div className="btn-wrapper my-4">
+										<h2 className="display-4 text-white">
+											Pobierz moje CV
+										</h2>
 										<Button
 											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
 											color="default"
-											href={greetings.resumeLinkPL}
+											href={greetings.resumeLinkEN}
 										>
 											<span className="iconify" data-icon="cif:gb"></span>
 											<span className="btn-inner--text">
-												Pobierz moje CV
+												ENGLISH VERSION
+											</span>
+										</Button>
+										<Button
+											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+											color="default"
+											href={greetings.resumeLinkEN}
+										>
+											<span className="iconify" data-icon="cif:pl"></span>
+											<span className="btn-inner--text">
+												WERSJA POLSKA
 											</span>
 										</Button>
 									</div>
