@@ -41,11 +41,9 @@ const Greetings = () => {
 										<Button
 											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
 											color="default"
-											href={greetings.resumeLink}
+											href={greetings.resumeLinkPL}
 										>
-											<span className="btn-inner--icon mr-1">
-												<i className="fa fa-file" />
-											</span>
+											<span className="iconify" data-icon="cif:gb"></span>
 											<span className="btn-inner--text">
 												Pobierz moje CV
 											</span>

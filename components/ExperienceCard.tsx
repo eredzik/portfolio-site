@@ -38,9 +38,13 @@ const ExperienceCard = ({ data }) => {
 						>
 							<Image
 								src={data.companylogo}
-								width={"100px"}
-								height={"100px"}
+								width={data.size || "100%"}
+								height={"100%"}
+								objectPosition={"relative"}
+
 								alt={data.companylogo}
+								// layout="fill"
+								objectFit="contain"
 							/>
 						</div>
 						<CardTitle tag="h5">{data.role}</CardTitle>
