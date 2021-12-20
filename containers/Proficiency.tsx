@@ -12,7 +12,7 @@ const Proficiency = () => {
 			<Fade bottom duration={1000} distance="40px">
 				<Row>
 					<Col lg="6">
-						<h1 className="h1">Umiejętności</h1>
+						{/* <h1 className="h1">Umiejętności</h1> */}
 						{SkillBars.map((skill) => {
 							return (
 								<div

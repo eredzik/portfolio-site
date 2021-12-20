@@ -9,17 +9,17 @@ import ExperienceCard from "../components/ExperienceCard";
 const Experience = () => {
 	return (
 		<section className="section section-lg">
-			<Container>
+			<Container className="text-center my-5 section section-lg">
 				<Fade bottom duration={1000} distance="40px">
 					<div className="d-flex p-1 pb-4">
 						<div>
-							<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
+							<div className="icon  icon-shape bg-gradient-white shadow rounded-circle text-info">
 								<i className="ni ni-briefcase-24 text-info" />
 							</div>
 						</div>
-						<div className="pl-4">
-							<h4 className="display-3 text-info align-center">DOŚWIADCZENIE</h4>
-						</div>
+						{/* <div className="">
+							<div className="display-4 text-info align-center">DOŚWIADCZENIE</div>
+						</div> */}
 					</div>
 				</Fade>
 				<Row className="row-grid align-items-center">
