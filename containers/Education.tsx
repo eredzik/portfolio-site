@@ -7,18 +7,16 @@ const Edution = () => {
 	return (
 		<section className="section pb-0 bg-gradient-info my-5">
 			<Container>
-				<div className="d-flex px-3">
-					<div>
-						{/* <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info"> */}
-						{/* <i className="ni ni-books text-info" /> */}
-						{/* </div> */}
+
+				<h1
+					className="display-3 text-white text-info text-center"
+					style={{ wordWrap: "break-word" }}>
+					<div className="mr-4 icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
+						<i className="ni ni-books text-info" />
 					</div>
-					{/* <div className="pl-4"> */}
-					{/* <h4 className="display-3 text-white" style={{ wordWrap: "break-word", overflow: "hidden", textOverflow: "ellipsis" }}> */}
 					Wykształcenie
-					{/* </h4> */}
-					{/* </div> */}
-				</div>
+				</h1>
+				{/* </div> */}
 				<Row className="row-grid align-items-center">
 					{educationInfo.map((info, i) => {
 						return (

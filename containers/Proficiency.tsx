@@ -11,8 +11,13 @@ const Proficiency = () => {
 		<Container className="section section-lg">
 			<Fade bottom duration={1000} distance="40px">
 				<Row>
+					<h1
+						className="h1 display-4 text-info align-center text-center"
+						style={{ wordWrap: "break-word" }}>
+						UMIEJĘTNOŚCI
+					</h1>
 					<Col lg="6">
-						<h1 className="h1 display-4 text-info align-center" style={{ wordWrap: "break-word" }}>Umiejętności</h1>
+
 						{SkillBars.map((skill) => {
 							return (
 								<div
