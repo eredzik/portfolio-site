@@ -1,7 +1,7 @@
 import emoji from "react-easy-emoji";
 
 export const greetings = {
-	name: "Emil Redzik",
+	name: "E. Redzik",
 	title: "Cześć, jestem Emil",
 	shortDescription: "Pasjonat programowania, inżynierii danych i data science.",
 	description:

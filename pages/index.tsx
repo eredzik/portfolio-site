@@ -14,6 +14,7 @@ const GithubProfileCard = dynamic(() =>
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
 import { greetings } from "../portfolio";
+import ContactForm from "../components/ContactForm";
 export default function Home({ githubProfileData }) {
 	return (
 		<div>
@@ -54,9 +55,12 @@ export default function Home({ githubProfileData }) {
 			<Proficiency />
 			<Experience />
 			<Education />
+
+			<GithubProfileCard prof={githubProfileData} />
+
+
 			{/* <Feedbacks /> */}
 			{/* <Projects /> */}
-			<GithubProfileCard prof={githubProfileData} />
 		</div>
 	);
 }

@@ -28,47 +28,45 @@ const Greetings = () => {
 						<span />
 					</div>
 					<Container className="py-lg-md d-flex">
-						<div className="col px-0">
-							<Row>
-								<Col lg="6">
-									<h1 className="display-3 text-white">
-										{greetings.title + " "}
-									</h1>
-									<p className="lead text-white">
-										{greetings.description}
-									</p>
-									<SocialLinks />
-									<div className="btn-wrapper my-4">
-										<h2 className="display-4 text-white">
-											Pobierz moje CV
-										</h2>
-										<Button
-											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-											color="default"
-											href={greetings.resumeLinkEN}
-										>
-											<Icon icon={"cif:gb"} />
-											{/* <span className="btn-inner--text">
+						<Row>
+							<Col lg="6">
+								<h1 className="display-3 text-white">
+									{greetings.title + " "}
+								</h1>
+								<p className="lead text-white">
+									{greetings.description}
+								</p>
+								<SocialLinks />
+								<div className="btn-wrapper my-4">
+									<h2 className="display-4 text-white">
+										Pobierz moje CV
+									</h2>
+									<Button
+										className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+										color="default"
+										href={greetings.resumeLinkEN}
+									>
+										<Icon icon={"cif:gb"} />
+										{/* <span className="btn-inner--text">
 												ENGLISH VERSION
 											</span> */}
-										</Button>
-										<Button
-											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-											color="default"
-											href={greetings.resumeLinkEN}
-										>
-											<Icon icon={"cif:pl"} />
-											{/* <span className="btn-inner--text">
+									</Button>
+									<Button
+										className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+										color="default"
+										href={greetings.resumeLinkEN}
+									>
+										<Icon icon={"cif:pl"} />
+										{/* <span className="btn-inner--text">
 												WERSJA POLSKA
 											</span> */}
-										</Button>
-									</div>
-								</Col>
-								<Col lg="6">
-									<GreetingLottie animationPath="/lottie/coding.json" />
-								</Col>
-							</Row>
-						</div>
+									</Button>
+								</div>
+							</Col>
+							<Col lg="6">
+								<GreetingLottie animationPath="/lottie/coding.json" />
+							</Col>
+						</Row>
 					</Container>
 					{/* SVG separator */}
 					<div className="separator separator-bottom separator-skew">

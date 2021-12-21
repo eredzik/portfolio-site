@@ -1,9 +1,10 @@
 import React from "react";
 
 import { Card, Col, Row, Container } from "reactstrap";
+import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 
 import SocialLinks from "./SocialLinks";
-import Image from "next/image";
 
 const GithubProfileCard = ({ prof }) => {
 	return (
@@ -25,6 +26,7 @@ const GithubProfileCard = ({ prof }) => {
 								Chcesz omówić jakiś projekt lub po prostu się przywitać?
 
 							</p>
+							<ContactForm />
 							<p className="text-white mt-3">{prof.bio}</p>
 							<div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
 								<i className="ni ni-pin-3 text-info mr-2" />

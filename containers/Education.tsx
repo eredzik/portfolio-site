@@ -9,13 +9,15 @@ const Edution = () => {
 			<Container>
 				<div className="d-flex px-3">
 					<div>
-						<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-							<i className="ni ni-books text-info" />
-						</div>
+						{/* <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info"> */}
+						{/* <i className="ni ni-books text-info" /> */}
+						{/* </div> */}
 					</div>
-					<div className="pl-4">
-						<h4 className="display-3 text-white">Wykształcenie</h4>
-					</div>
+					{/* <div className="pl-4"> */}
+					{/* <h4 className="display-3 text-white" style={{ wordWrap: "break-word", overflow: "hidden", textOverflow: "ellipsis" }}> */}
+					Wykształcenie
+					{/* </h4> */}
+					{/* </div> */}
 				</div>
 				<Row className="row-grid align-items-center">
 					{educationInfo.map((info, i) => {
@@ -46,7 +48,7 @@ const Edution = () => {
 					/>
 				</svg>
 			</div>
-		</section>
+		</section >
 	);
 };
 

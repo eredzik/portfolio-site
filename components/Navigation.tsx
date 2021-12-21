@@ -36,14 +36,14 @@ export const Navigation = () => {
 					expand="lg"
 					id="navbar-main"
 				>
-					<Container>
+					<Container >
 						<NavbarBrand href="/" className="mr-lg-4">
 							<h2 className="text-white" id="nav-title">
 								{greetings.name}
 							</h2>
 						</NavbarBrand>
 						<button
-							className="navbar-toggler"
+							className="navbar-toggler float-right"
 							aria-label="navbar_toggle"
 							id="navbar_global"
 						>

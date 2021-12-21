@@ -10,7 +10,7 @@ const Skills = () => {
 	return (
 		<Fade bottom duration={1000} distance="40px">
 			<Container className="text-center my-5 section section-lg">
-				<h1 className="h1">{skillsSection.title}</h1>
+				<h1 className="h1" style={{ wordWrap: "break-word" }}>{skillsSection.title}</h1>
 				<p className="lead">{skillsSection.subTitle}</p>
 				<Row>
 					<Col lg="6">
