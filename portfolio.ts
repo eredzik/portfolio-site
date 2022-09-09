@@ -8,7 +8,7 @@ export const greetings = {
 		`Jestem pasjonatem programowania, inżynierii danych i data science. 
 		Mam doświadczenie w budowaniu przepływów danych dla największych instytucji finansowych w Polsce.
 		Z chęcią podejmę się realizacji projektu dla Twojej firmy.`,
-	resumeLinkEN: "/img/icons/common/EmilRedzikCV_PL.pdf",
+	resumeLinkEN: "/img/icons/common/EmilRedzikCV_EN.pdf",
 	resumeLinkPL: "/img/icons/common/EmilRedzikCV_PL.pdf"
 };
 

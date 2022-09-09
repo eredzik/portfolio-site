@@ -54,7 +54,7 @@ const Greetings = () => {
 									<Button
 										className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
 										color="default"
-										href={greetings.resumeLinkEN}
+										href={greetings.resumeLinkPL}
 									>
 										<Icon icon={"cif:pl"} />
 										{/* <span className="btn-inner--text">

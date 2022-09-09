@@ -22,7 +22,7 @@ export default function Home({ githubProfileData }) {
 				data={{
 					title: "Redzik Portfolio",
 					description: greetings.shortDescription,
-					image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
+					image: "https://avatars.githubusercontent.com/u/53577889?v=4",
 					url: "eredzik.com",
 					keywords: [
 						"Redzik",

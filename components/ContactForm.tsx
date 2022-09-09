@@ -6,6 +6,7 @@ const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    const [isError, setIsError] = useState(false)
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Sending')
@@ -29,6 +30,9 @@ const ContactForm = () => {
                 setName('')
                 setEmail('')
                 setMessage('')
+            }
+            else {
+                setIsError(true)
             }
         })
     }
@@ -61,6 +65,7 @@ const ContactForm = () => {
                 onChange={(e) => setMessage(e.target.value)} />
         </FormGroup>
         <Button>Wyślij!</Button>
+        {isError ? "Coś poszło nie tak przy wysyłaniu wiadomości z formularza :( Wciąż możesz się ze mną skontaktować mailowo na kontakt@eredzik.com":""}
     </Form >
 }
 export default ContactForm;
