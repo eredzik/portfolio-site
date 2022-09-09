@@ -25,11 +25,10 @@ export default function (req, res) {
     }
     console.log("Got mail data")
     transporter.sendMail(mailData, function (err, info) {
-        if (err)
-            {console.log(err)}
-        else
-            {console.log(info)}
+        console.log(err)
+        console.log(info)
     })
+    console.log("Sent mail")
     res.status(200)
     res.end()
 }

@@ -65,7 +65,7 @@ const ContactForm = () => {
                 onChange={(e) => setMessage(e.target.value)} />
         </FormGroup>
         <Button>Wyślij!</Button>
-        {isError == false
+        {isError
             ? <div>
                 Coś poszło nie tak przy wysyłaniu wiadomości z formularza :( 
                 Wciąż możesz się ze mną skontaktować mailowo na kontakt@eredzik.com
