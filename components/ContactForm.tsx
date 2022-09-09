@@ -65,7 +65,13 @@ const ContactForm = () => {
                 onChange={(e) => setMessage(e.target.value)} />
         </FormGroup>
         <Button>Wyślij!</Button>
-        {isError ? "Coś poszło nie tak przy wysyłaniu wiadomości z formularza :( Wciąż możesz się ze mną skontaktować mailowo na kontakt@eredzik.com":""}
+        {isError == false
+            ? <div>
+                Coś poszło nie tak przy wysyłaniu wiadomości z formularza :( 
+                Wciąż możesz się ze mną skontaktować mailowo na kontakt@eredzik.com
+
+            </div>
+            : null}
     </Form >
 }
 export default ContactForm;
