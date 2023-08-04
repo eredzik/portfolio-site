@@ -18,7 +18,7 @@ function SEO({
       <meta name="title" content={data.title} />
       <meta name="author" content="Emil Redzik" />
       <meta name="description" content={data.description} lang="pl" />
-      <meta http-httpEquiv="Content-Language" content="pl" />
+      <meta httpEquiv="Content-Language" content="pl" />
       <meta name="keywords" content={data.keywords.join(", ")} />
       <link rel="canonical" href={data.url} />
       {/* Open Graph / Facebook */}
